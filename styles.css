@@ -1,0 +1,282 @@
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Urbanist', sans-serif; */
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #06a37b;
+  height: 100px;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 65px;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo img {
+  height: 150px;
+}
+
+.logo span {
+  font-size: 24px;
+  color: #f1f6f0;
+  font-family: 'Dancing Script', cursive;
+}
+
+header ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f6f0;
+  font-family: 'Dancing Script', cursive;
+}
+
+.villa {
+  display: flex;
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.villa img {
+  width: 60%;
+  height: 304px;
+  object-fit: cover;
+}
+.villa-link{
+  text-decoration: none;
+}
+
+.villas-wrapper {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction:column;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+    flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.title {
+  font-size: 40px;
+  color:#06a37b;
+  font-family:'Dancing Script', cursive;
+  font-weight:700;
+}
+
+.price{
+  font-size: 24px;
+  font-family:'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+.dream-help-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  height: 100px;
+  background-color: #06a37b;
+  justify-content: space-between;
+ }
+ 
+ .help-contact ul{
+     list-style: none;
+     padding-left: 0px;
+     padding-bottom: 5px;
+     font-family:'Dancing Script', cursive;
+     color:#fafafa;
+ }
+ 
+ .help-desk ul{
+     display: flex;
+     flex-direction: row;
+     flex-wrap:nowrap;
+     column-gap: 12px;
+     list-style: none;
+     font-family:'Dancing Script', cursive;
+ }
+ 
+ .help-desk ul a{
+     color:#fafafa;
+     text-decoration: none;
+     color:#fafafa;
+ }
+ 
+ .help-desk ul a:hover{
+     color:#050568;
+ }
+ 
+ .page-author{
+     background-color: #06a37b;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .page-author p{
+     margin-top: 5px;
+     text-align: center;
+     color:#fafafa;
+     font-family:'Dancing Script', cursive;
+ }
+
+
+.delete-wrapper{
+  display: grid;
+  grid-template-columns: 11fr 1fr;
+}
+
+ .delete-icon{
+  grid-column-start: 2;
+  padding:20px;
+ }
+
+ .delete-icon img{
+  width:30px;
+  margin: 6px 6px;
+  cursor: pointer;
+ }
+
+ .delete-message{
+  color: red;
+ }
+
+ .villa-wrapper {
+  background-color: #fafafa;
+  margin: 100px 30px 100px;
+  border: 1px solid rgb(237, 232, 232);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+ .villa-section{
+  min-height:calc(100vh-300px);
+  background-color: #fafafa;
+ }
+
+.villa-photo {
+  background-position: center;
+  background-size: cover;
+}
+
+.villa-location {
+  margin: 20px 15px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+}
+
+.villa-title {
+  font-family:'Dancing Script', cursive;
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 8px;
+  color:#06a37b;
+  margin-left:25%;
+}
+
+.villa-description {
+  margin: 20px 15px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+
+.villa-price {
+  font-family: 'Inter', sans-serif;
+  color:#06a37b;
+  font-weight:400;
+  font-size: 13px;
+  margin: 0px 15px 20px;
+}
+
+.villa-form{
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+}
+
+.villa-form input{
+  width: 300px;
+  margin: 10px 15px 10px;
+  border: 1px solid rgb(6, 163, 123);
+  border-radius: 5px;
+}
+
+.villa-form button{
+  position:relative;
+  display:inline-block;
+  font-family:'Dancing Script', cursive;;
+  background-color:#06a37b;
+  color:#fafafa;
+  margin: 20px 15px 20px;
+  padding:10px;
+  cursor: pointer;
+  width: 50%;
+  border: 1px solid rgb(6, 163, 123);
+  border-radius:5px;
+  letter-spacing: .2em; 
+}
+
+.villa-form button:hover {
+  color:#050568;
+  letter-spacing: .25em;
+  text-shadow: 0 0 5px #050568;
+  transition-delay: 1ms;
+  border: 2px solid #050568;
+  box-shadow:5px 5px 2px 1px #050568;
+}
+
+.success_message{
+color:#06a37b;
+}
+
+@media  screen and (max-width: 484px) {
+
+  header ul{
+    display:flex;
+    flex-direction: column;
+  }
+.villa-wrapper{
+  grid-template-columns: 1fr;
+  
+}
+.villa-photo{
+  height: 482px;
+}
+
+.villa-content{
+  width: 482px;
+}
+}
